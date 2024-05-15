@@ -1,0 +1,16 @@
+Snowpipe Overview
+Snowpipe enables continuous data ingestion into Snowflake, allowing for real-time or near real-time data loading. It automates the loading of data from a specified stage into a Snowflake table, which can be a critical part of a modern data pipeline.
+
+Key Components
+Stages:
+
+Internal Stages: Managed by Snowflake.
+External Stages: Referencing external storage like Amazon S3, Google Cloud Storage, or Microsoft Azure Blob Storage.
+File Formats: Defines the format of the data files (e.g., CSV, JSON, Avro, Parquet).
+
+Copy Into Command: SQL command used by Snowpipe to load data from the stage into the target table.
+
+Notifications: Used to trigger the Snowpipe process. Notifications can come from AWS S3, Azure Blob Storage, or GCS events.
+
+Setting Up Snowpipe
+Here is a basic guide to setting up Snowpipe:
